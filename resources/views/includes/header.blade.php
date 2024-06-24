@@ -5,10 +5,10 @@
 						<div class="col-lg-6 col-md-5 col-12">
 							<!-- Contact -->
 							<ul class="top-link">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Doctors</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">FAQ</a></li>
+							<li><a href="#">{{__('messages.about')}}</a></li>
+								<li><a href="#">{{__('messages.doctors')}}</a></li>
+								<li><a href="#">{{__('messages.contact')}}</a></li>
+								<li><a href="#">{{__('messages.FAQ')}}</a></li>
 							</ul>
 							<!-- End Contact -->
 						</div>
@@ -19,7 +19,18 @@
 								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
 							</ul>
 							<!-- End Top Contact -->
-						</div>
+							</div>
+						<li class="language-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe"></i> {{__('messages.language')}} <i class="icofont-rounded-down"></i>
+                         </a>
+                       <ul class="dropdown-menu">
+                             <li><a href="{{ LaravelLocalization::getLocalizedURL('en') }}"><i class="flag-icon flag-icon-gb"></i> {{__('messages.english')}}</a></li>
+                            <li><a href="{{ LaravelLocalization::getLocalizedURL('ar') }}"><i class="flag-icon flag-icon-sa"></i> {{__('messages.arabic')}}</a></li>
+                        </ul>
+                      </li>
+					
+						
 					</div>
 				</div>
 			</div>
